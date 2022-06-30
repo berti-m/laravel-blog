@@ -16,3 +16,5 @@
 <li>To make storage available for uploading thumbnails run: <strong>php artisan storage:link</strong></li>
 <li>To start development server: <strong>php artisan serve</strong></li>
 </ul>
+
+<p>To make some user <strong>admin</strong> (can publish posts, create categories etc.) go to root folder, run <strong>php artisan tinker</strong> and then run: <strong>User::where('username', '#enterhereyourusername')->increment('is_admin', 1)</strong></p>
